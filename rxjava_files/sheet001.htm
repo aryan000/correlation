@@ -1,0 +1,764 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 14">
+<link id=Main-File rel=Main-File href="../rxjava.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../rxjava.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link=blue vlink=purple>
+
+<table border=0 cellpadding=0 cellspacing=0 width=1247 style='border-collapse:
+ collapse;table-layout:fixed;width:935pt'>
+ <col width=33 style='mso-width-source:userset;mso-width-alt:1206;width:25pt'>
+ <col width=40 style='mso-width-source:userset;mso-width-alt:1462;width:30pt'>
+ <col width=31 style='mso-width-source:userset;mso-width-alt:1133;width:23pt'>
+ <col width=30 style='mso-width-source:userset;mso-width-alt:1097;width:23pt'>
+ <col width=34 style='mso-width-source:userset;mso-width-alt:1243;width:26pt'>
+ <col width=39 style='mso-width-source:userset;mso-width-alt:1426;width:29pt'>
+ <col width=84 style='mso-width-source:userset;mso-width-alt:3072;width:63pt'>
+ <col width=63 style='mso-width-source:userset;mso-width-alt:2304;width:47pt'>
+ <col width=84 style='mso-width-source:userset;mso-width-alt:3072;width:63pt'>
+ <col width=35 style='mso-width-source:userset;mso-width-alt:1280;width:26pt'>
+ <col width=84 span=6 style='mso-width-source:userset;mso-width-alt:3072;
+ width:63pt'>
+ <col width=40 style='mso-width-source:userset;mso-width-alt:1462;width:30pt'>
+ <col width=43 style='mso-width-source:userset;mso-width-alt:1572;width:32pt'>
+ <col width=35 style='mso-width-source:userset;mso-width-alt:1280;width:26pt'>
+ <col width=84 style='mso-width-source:userset;mso-width-alt:3072;width:63pt'>
+ <col width=33 style='mso-width-source:userset;mso-width-alt:1206;width:25pt'>
+ <col width=35 style='mso-width-source:userset;mso-width-alt:1280;width:26pt'>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 width=33 style='height:15.0pt;width:25pt'>BOC</td>
+  <td width=40 style='width:30pt'>TACH</td>
+  <td width=31 style='width:23pt'>FCH</td>
+  <td width=30 style='width:23pt'>LCH</td>
+  <td width=34 style='width:26pt'>CHO</td>
+  <td width=39 style='width:29pt'>FRCH</td>
+  <td width=84 style='width:63pt'>CHD</td>
+  <td width=63 style='width:47pt'>WCH</td>
+  <td width=84 style='width:63pt'>WCD</td>
+  <td width=35 style='width:26pt'>WFR</td>
+  <td width=84 style='width:63pt'>ATAF</td>
+  <td width=84 style='width:63pt'>LCA</td>
+  <td width=84 style='width:63pt'>LCD</td>
+  <td width=84 style='width:63pt'>CSB</td>
+  <td width=84 style='width:63pt'>CSBS</td>
+  <td width=84 style='width:63pt'>ACDF</td>
+  <td width=40 style='width:30pt'>WMC</td>
+  <td width=43 style='width:32pt'>LCOM</td>
+  <td width=35 style='width:26pt'>DIT</td>
+  <td width=84 style='width:63pt'>RFC</td>
+  <td width=33 style='width:25pt'>CBO</td>
+  <td width=35 style='width:26pt'>NOC</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>0</td>
+  <td align=right>5</td>
+  <td align=right>5</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0.625</td>
+  <td align=right>0.0078125</td>
+  <td align=right>4</td>
+  <td align=right>5</td>
+  <td align=right>5</td>
+  <td align=right>0.0625</td>
+  <td align=right>5</td>
+  <td align=right>0.066666667</td>
+  <td align=right>0.0625</td>
+  <td align=right>8</td>
+  <td align=right>16</td>
+  <td align=right>0</td>
+  <td align=right>16</td>
+  <td align=right>4</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>13</td>
+  <td align=right>4</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>3</td>
+  <td align=right>0.005163511</td>
+  <td align=right>16.8125</td>
+  <td align=right>0.029122481</td>
+  <td align=right>15</td>
+  <td align=right>15</td>
+  <td align=right>13</td>
+  <td align=right>0.022375215</td>
+  <td align=right>31</td>
+  <td align=right>0.056363636</td>
+  <td align=right>0.02052</td>
+  <td align=right>45</td>
+  <td align=right>88</td>
+  <td align=right>0</td>
+  <td align=right>34</td>
+  <td align=right>30</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>0</td>
+  <td align=right>3</td>
+  <td align=right>3</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>7.4375</td>
+  <td align=right>0.239919355</td>
+  <td align=right>2</td>
+  <td align=right>238</td>
+  <td align=right>238</td>
+  <td align=right>7.677419355</td>
+  <td align=right>238</td>
+  <td align=right>0.881481481</td>
+  <td align=right>7.677419355</td>
+  <td align=right>2</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>14</td>
+  <td align=right>2</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>0</td>
+  <td align=right>3</td>
+  <td align=right>3</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0.0625</td>
+  <td align=right>0.000388199</td>
+  <td align=right>2</td>
+  <td align=right>2</td>
+  <td align=right>2</td>
+  <td align=right>0.01242236</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>0.01242236</td>
+  <td align=right>3</td>
+  <td align=right>66</td>
+  <td align=right>0</td>
+  <td align=right>15</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>315</td>
+  <td align=right>3</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>6</td>
+  <td align=right>0.001753873</td>
+  <td align=right>561.5625</td>
+  <td align=right>0.171682983</td>
+  <td align=right>27</td>
+  <td align=right>223.1666667</td>
+  <td align=right>315</td>
+  <td align=right>0.09207834</td>
+  <td align=right>985</td>
+  <td align=right>0.404351396</td>
+  <td align=right>0.44243</td>
+  <td align=right>168</td>
+  <td align=right>98</td>
+  <td align=right>0</td>
+  <td align=right>162</td>
+  <td align=right>61</td>
+  <td align=right>26</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>3</td>
+  <td align=right>8</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0.001237624</td>
+  <td align=right>3</td>
+  <td align=right>0.003712871</td>
+  <td align=right>7</td>
+  <td align=right>3</td>
+  <td align=right>3</td>
+  <td align=right>0.003712871</td>
+  <td align=right>1</td>
+  <td align=right>0.001239157</td>
+  <td align=right>0.003713</td>
+  <td align=right>3</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>15</td>
+  <td align=right>8</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>7</td>
+  <td align=right>2</td>
+  <td align=right>8</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0.0125</td>
+  <td align=right>2</td>
+  <td align=right>0.025</td>
+  <td align=right>7</td>
+  <td align=right>2</td>
+  <td align=right>2</td>
+  <td align=right>0.025</td>
+  <td align=right>1</td>
+  <td align=right>0.012658228</td>
+  <td align=right>0.025</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>13</td>
+  <td align=right>2</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>7</td>
+  <td align=right>3</td>
+  <td align=right>8</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0.00862069</td>
+  <td align=right>3</td>
+  <td align=right>0.025862069</td>
+  <td align=right>7</td>
+  <td align=right>3</td>
+  <td align=right>3</td>
+  <td align=right>0.025862069</td>
+  <td align=right>3</td>
+  <td align=right>0.026548673</td>
+  <td align=right>0.025862</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>13</td>
+  <td align=right>3</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>0</td>
+  <td align=right>3</td>
+  <td align=right>3</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0.3125</td>
+  <td align=right>0.003289474</td>
+  <td align=right>2</td>
+  <td align=right>10</td>
+  <td align=right>10</td>
+  <td align=right>0.105263158</td>
+  <td align=right>3</td>
+  <td align=right>0.030612245</td>
+  <td align=right>0.105263</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>13</td>
+  <td align=right>3</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>0</td>
+  <td align=right>6</td>
+  <td align=right>6</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>13.25</td>
+  <td align=right>0.022766323</td>
+  <td align=right>5</td>
+  <td align=right>59</td>
+  <td align=right>53</td>
+  <td align=right>0.091065292</td>
+  <td align=right>24</td>
+  <td align=right>0.041666667</td>
+  <td align=right>0.091065</td>
+  <td align=right>3</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>15</td>
+  <td align=right>4</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>7</td>
+  <td align=right>14</td>
+  <td align=right>8</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0.005025126</td>
+  <td align=right>14</td>
+  <td align=right>0.070351759</td>
+  <td align=right>7</td>
+  <td align=right>14</td>
+  <td align=right>14</td>
+  <td align=right>0.070351759</td>
+  <td align=right>1</td>
+  <td align=right>0.005</td>
+  <td align=right>0.070352</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>13</td>
+  <td align=right>4</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>6</td>
+  <td align=right>3</td>
+  <td align=right>8</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0.002638522</td>
+  <td align=right>3</td>
+  <td align=right>0.007915567</td>
+  <td align=right>7</td>
+  <td align=right>3</td>
+  <td align=right>3</td>
+  <td align=right>0.007915567</td>
+  <td align=right>1</td>
+  <td align=right>0.002645503</td>
+  <td align=right>0.007916</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>13</td>
+  <td align=right>4</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>3</td>
+  <td align=right>8</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0.00390625</td>
+  <td align=right>3</td>
+  <td align=right>0.01171875</td>
+  <td align=right>7</td>
+  <td align=right>3</td>
+  <td align=right>3</td>
+  <td align=right>0.01171875</td>
+  <td align=right>1</td>
+  <td align=right>0.003921569</td>
+  <td align=right>0.011719</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>13</td>
+  <td align=right>3</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>0</td>
+  <td align=right>5</td>
+  <td align=right>5</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>17.75</td>
+  <td align=right>0.05976431</td>
+  <td align=right>4</td>
+  <td align=right>142</td>
+  <td align=right>142</td>
+  <td align=right>0.478114478</td>
+  <td align=right>80</td>
+  <td align=right>0.372093023</td>
+  <td align=right>0.478114</td>
+  <td align=right>5</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>17</td>
+  <td align=right>3</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>4</td>
+  <td align=right>11</td>
+  <td align=right>8</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0.006993007</td>
+  <td align=right>11</td>
+  <td align=right>0.076923077</td>
+  <td align=right>7</td>
+  <td align=right>11</td>
+  <td align=right>11</td>
+  <td align=right>0.076923077</td>
+  <td align=right>31</td>
+  <td align=right>0.17816092</td>
+  <td align=right>0.076923</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>13</td>
+  <td align=right>2</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>4</td>
+  <td align=right>3</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>2</td>
+  <td align=right>0.020833333</td>
+  <td align=right>4.125</td>
+  <td align=right>0.04296875</td>
+  <td align=right>9</td>
+  <td align=right>4</td>
+  <td align=right>4</td>
+  <td align=right>0.041666667</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>0.04167</td>
+  <td align=right>2</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>14</td>
+  <td align=right>5</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>3</td>
+  <td align=right>8</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0.013157895</td>
+  <td align=right>3</td>
+  <td align=right>0.039473684</td>
+  <td align=right>7</td>
+  <td align=right>3</td>
+  <td align=right>3</td>
+  <td align=right>0.039473684</td>
+  <td align=right>1</td>
+  <td align=right>0.013333333</td>
+  <td align=right>0.039474</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>13</td>
+  <td align=right>3</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>3</td>
+  <td align=right>3</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>2</td>
+  <td align=right>0.002453988</td>
+  <td align=right>3.1875</td>
+  <td align=right>0.003911326</td>
+  <td align=right>9</td>
+  <td align=right>4.5</td>
+  <td align=right>3</td>
+  <td align=right>0.003680982</td>
+  <td align=right>1</td>
+  <td align=right>0.001228501</td>
+  <td align=right>0.005525</td>
+  <td align=right>3</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>15</td>
+  <td align=right>8</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>7</td>
+  <td align=right>9</td>
+  <td align=right>8</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0.003367003</td>
+  <td align=right>9</td>
+  <td align=right>0.03030303</td>
+  <td align=right>7</td>
+  <td align=right>9</td>
+  <td align=right>9</td>
+  <td align=right>0.03030303</td>
+  <td align=right>16</td>
+  <td align=right>0.056939502</td>
+  <td align=right>0.030303</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>13</td>
+  <td align=right>4</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>7</td>
+  <td align=right>3</td>
+  <td align=right>8</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0.007352941</td>
+  <td align=right>3</td>
+  <td align=right>0.022058824</td>
+  <td align=right>7</td>
+  <td align=right>3</td>
+  <td align=right>3</td>
+  <td align=right>0.022058824</td>
+  <td align=right>1</td>
+  <td align=right>0.007407407</td>
+  <td align=right>0.022059</td>
+  <td align=right>3</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>15</td>
+  <td align=right>7</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>42</td>
+  <td align=right>8</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0.003533569</td>
+  <td align=right>42</td>
+  <td align=right>0.148409894</td>
+  <td align=right>7</td>
+  <td align=right>42</td>
+  <td align=right>42</td>
+  <td align=right>0.148409894</td>
+  <td align=right>33</td>
+  <td align=right>0.132</td>
+  <td align=right>0.14841</td>
+  <td align=right>8</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>17</td>
+  <td align=right>12</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>4</td>
+  <td align=right>10</td>
+  <td align=right>6</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>2</td>
+  <td align=right>0.016260163</td>
+  <td align=right>14.25</td>
+  <td align=right>0.116425</td>
+  <td align=right>12</td>
+  <td align=right>13.5</td>
+  <td align=right>10</td>
+  <td align=right>0.081300813</td>
+  <td align=right>17</td>
+  <td align=right>0.160377358</td>
+  <td align=right>0.110897935</td>
+  <td align=right>6</td>
+  <td align=right>66</td>
+  <td align=right>0</td>
+  <td align=right>18</td>
+  <td align=right>3</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>0</td>
+  <td align=right>3</td>
+  <td align=right>3</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0.0625</td>
+  <td align=right>0.000496032</td>
+  <td align=right>2</td>
+  <td align=right>2</td>
+  <td align=right>2</td>
+  <td align=right>0.015873016</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>0.015873</td>
+  <td align=right>8</td>
+  <td align=right>19</td>
+  <td align=right>1</td>
+  <td align=right>167</td>
+  <td align=right>5</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>1</td>
+  <td align=right>8</td>
+  <td align=right>8</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0.029411765</td>
+  <td align=right>1</td>
+  <td align=right>0.029411765</td>
+  <td align=right>7</td>
+  <td align=right>1</td>
+  <td align=right>1</td>
+  <td align=right>0.029411765</td>
+  <td align=right>7</td>
+  <td align=right>0.259259259</td>
+  <td align=right>0.029412</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>34</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 align=right style='height:15.0pt'>1</td>
+  <td align=right>0</td>
+  <td align=right>3</td>
+  <td align=right>3</td>
+  <td align=right>0</td>
+  <td align=right>1</td>
+  <td align=right>0</td>
+  <td align=right>0.1875</td>
+  <td align=right>0.000288906</td>
+  <td align=right>2</td>
+  <td align=right>6</td>
+  <td align=right>6</td>
+  <td align=right>0.009244992</td>
+  <td align=right>8</td>
+  <td align=right>0.012480499</td>
+  <td align=right>0.009245</td>
+  <td align=right>10</td>
+  <td align=right>12</td>
+  <td align=right>0</td>
+  <td align=right>16</td>
+  <td align=right>2</td>
+  <td align=right>0</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=33 style='width:25pt'></td>
+  <td width=40 style='width:30pt'></td>
+  <td width=31 style='width:23pt'></td>
+  <td width=30 style='width:23pt'></td>
+  <td width=34 style='width:26pt'></td>
+  <td width=39 style='width:29pt'></td>
+  <td width=84 style='width:63pt'></td>
+  <td width=63 style='width:47pt'></td>
+  <td width=84 style='width:63pt'></td>
+  <td width=35 style='width:26pt'></td>
+  <td width=84 style='width:63pt'></td>
+  <td width=84 style='width:63pt'></td>
+  <td width=84 style='width:63pt'></td>
+  <td width=84 style='width:63pt'></td>
+  <td width=84 style='width:63pt'></td>
+  <td width=84 style='width:63pt'></td>
+  <td width=40 style='width:30pt'></td>
+  <td width=43 style='width:32pt'></td>
+  <td width=35 style='width:26pt'></td>
+  <td width=84 style='width:63pt'></td>
+  <td width=33 style='width:25pt'></td>
+  <td width=35 style='width:26pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
